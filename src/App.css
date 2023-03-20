@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 2px 35%;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ----- Global Declaration ----- */
+.d-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* ----- Accessing Home.js ----- */
+.home {
+  width: 450px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.reactLogo {
+  width: 360px;
+  margin: auto;
+}
+
+/* ----- Accessing Navbar.js ----- */
+.navbar {
+  width: 100%;
+  justify-content: space-around;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  margin: 1px auto;
+  padding: 1px 51px 10px;
+  font-size: 18px;
+}
+
+.navbar .active {
+  font-weight: 500;
+  border-bottom: 3px solid rgb(239, 37, 144);
+}
+
+/* ----- Accessing Login.js ----- */
+.loginForm {
+  padding: 2px 10px;
+}
+
+/* ----- Accessing LoginForm.js ----- */
+.loginForm input {
+  display: block;
+  width: 80%;
+  padding: 18px;
+  height: 40px;
+  margin: 10px auto;
+  border-radius: 20px;
+  border: 1px solid rgb(87, 84, 84);
+}
+
+.loginBtn {
+  background-color: rgb(239, 37, 144);
   color: white;
+  width: 80%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.fp {
+  text-align: right;
+  margin-right: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.loginW {
+  text-align: center;
+  color: silver;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ----- Accessing socialNetwork.js ----- */
+.socialNetwork {
+  text-align: center;
+  margin: 30px 1px;
+}
+.socialNetwork a {
+  margin: 1px 20px;
+  border: 1px solid silver;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.fbIcon {
+  color: blue;
+}
+.twitterIcon {
+  color: rgb(81, 199, 246);
+}
+
+/* ----- Accessing FooterInfo.js ----- */
+.Daccnt {
+  text-align: center;
+  font-size: 16px;
+}
+
+.c-pink {
+  color: rgb(239, 37, 144);
+  text-decoration: none;
+}
+
+.tc {
+  text-decoration: underline;
 }
